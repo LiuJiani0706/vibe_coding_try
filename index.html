@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>暗潮人格测试</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section id="homeScreen" class="screen active">
+        <h1>暗潮人格测试</h1>
+        <p class="subtitle">测测你的夜色人格原型</p>
+        <div class="card">
+          <p>
+            这是一个 16 题的行为倾向测试。你将从“参与、能量、情绪、现实”四个维度被映射到 10 种原型。
+            结果采用“距离 + 概率”而不是硬分类，含轻微随机扰动，避免千人一面。
+          </p>
+          <ul>
+            <li>共 16 题，单题单选</li>
+            <li>支持返回上一题修改答案</li>
+            <li>结果页可一键复制并微信分享</li>
+          </ul>
+          <button id="startBtn" class="btn primary">开始测试</button>
+        </div>
+      </section>
+
+      <section id="quizScreen" class="screen">
+        <header class="quiz-header">
+          <p id="progressText"></p>
+          <div class="progress-bar">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+        </header>
+        <article class="card">
+          <h2 id="questionTitle"></h2>
+          <p id="questionText"></p>
+          <div id="options" class="options"></div>
+          <div class="actions">
+            <button id="prevBtn" class="btn">上一题</button>
+            <button id="nextBtn" class="btn primary">下一题</button>
+          </div>
+        </article>
+      </section>
+
+      <section id="resultScreen" class="screen">
+        <h2>你的暗潮标签</h2>
+        <article class="card result-card">
+          <h3 id="resultName"></h3>
+          <p id="resultScene" class="scene"></p>
+          <blockquote id="resultPoem"></blockquote>
+          <p id="resultAnalysis"></p>
+
+          <div id="secondaryResult" class="secondary hidden"></div>
+
+          <h4>概率分布</h4>
+          <ul id="probabilityList" class="probability-list"></ul>
+
+          <div class="actions stack">
+            <button id="shareBtn" class="btn primary">分享到微信</button>
+            <button id="copyBtn" class="btn">复制结果文案</button>
+            <button id="restartBtn" class="btn">再测一次</button>
+          </div>
+          <p id="shareHint" class="hint"></p>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
