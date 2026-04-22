@@ -5,6 +5,11 @@
 - 浏览器（GitHub Pages）
 直接使用。
 
+## 为什么你打开 GitHub Pages 看到 README 文本？
+
+因为仓库之前没有 `index.html` 页面入口。
+现在已新增根目录 `index.html`，GitHub Pages 会优先展示它，而不是 README 文本。
+
 ## 1) Node.js 用法
 
 ```js
@@ -22,7 +27,11 @@ console.log(JSON.stringify(result, null, 2));
 
 ## 2) GitHub Pages 直接调用
 
-把仓库发布到 GitHub Pages 后，在页面中直接引入：
+### 页面入口
+
+仓库根目录的 `index.html` 已内置示例 UI，可直接选择 16 个答案并计算结果。
+
+### 手工引入脚本
 
 ```html
 <script src="./src/scoringEngine.js"></script>
