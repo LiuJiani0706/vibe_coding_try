@@ -1,0 +1,7 @@
+data/docx/*.docx
+data/output/*
+!data/docx/.gitkeep
+!data/output/.gitkeep
+.Rhistory
+.RData
+.Rproj.user/
