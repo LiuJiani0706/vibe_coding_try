@@ -1,0 +1,10 @@
+# Add one custom stopword per line. Lines beginning with # are ignored.
+# Examples you may want to uncomment for legal/governance texts:
+# article
+# chapter
+# shall
+# section
+# paragraph
+# 数据
+# 规定
+# 办法
